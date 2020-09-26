@@ -1,0 +1,11 @@
+To deploy nodes:
+gradlew clean deployNodes
+
+To run nondes:
+cd build/nodes/runnodes.bat
+
+Check no of flows : flow list
+
+Issue and Asset:  start TwoPartyAssetIssuance assetAmount: 100, sellerParty: "O=WellsFargo,L=New York,C=US"
+Check Asset state in ledger:
+    run vaultQuery contractStateType: com.template.states.TwoPartyAssetState
